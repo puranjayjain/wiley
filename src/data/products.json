@@ -1,0 +1,9 @@
+{
+  "products": [
+    {
+      "name": "Bag #1",
+      "price": 250,
+      "img": "1.png"
+    }
+  ]
+}

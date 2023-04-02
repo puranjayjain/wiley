@@ -1,25 +1,28 @@
 {
-  "name": "wiley",
-  "version": "1.0.0",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "description": "",
+  "name": "wily",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "clean": "rm -rf docs/*",
-    "build:parcel": "parcel build src/index.html --dist-dir=docs --no-content-hash --no-source-maps --public-url ./",
-    "build": "npm run clean && npm run build:parcel"
-  },
-  "keywords": [],
-  "author": "Puranjay Jain",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.6.2"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "install-command": "pnpm install"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^0.1.12",
-    "gsap": "^3.10.4",
+    "gsap": "^3.11.5",
     "imagesloaded": "^5.0.0",
-    "split-type": "^0.3.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "splitting": "^1.0.6"
   },
-  "packageManager": "yarn@3.4.1"
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/splitting": "^1.0.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "prettier": "2.8.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
 }
